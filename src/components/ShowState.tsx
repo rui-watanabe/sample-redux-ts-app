@@ -6,7 +6,7 @@ interface OwnProps {
     clickCount: number
 }
 
-export const ShowState : React.FC<OwnProps> = props => {
+const ShowState : React.FC<OwnProps> = props => {
     return(
         <div>
             <label>[states]</label>
@@ -16,3 +16,5 @@ export const ShowState : React.FC<OwnProps> = props => {
         </div>
     )
 }
+
+export default ShowState;
