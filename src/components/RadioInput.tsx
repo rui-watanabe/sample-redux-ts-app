@@ -6,8 +6,7 @@ interface OwnProps {
     onChangeValue: Function
 }
 
-type Props = OwnProps
-export const RadioInput : React.FC<Props> = props => {
+export const RadioInput : React.FC<OwnProps> = props => {
     return(
         <div>
             <span>{props.title}</span>
@@ -16,4 +15,4 @@ export const RadioInput : React.FC<Props> = props => {
             <input type='radio' id='3' name='radio-group' value='radio3' onChange={(e) => props.onChangeValue(e.target.value)}/><label>３</label>
         </div>
     )
-    }
+}
