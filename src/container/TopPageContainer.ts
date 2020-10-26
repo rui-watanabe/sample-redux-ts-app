@@ -25,4 +25,5 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
         handleOnClick: () => { dispatch(TextInputActions.updateClickCount()) }
     }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(TopPageForm)

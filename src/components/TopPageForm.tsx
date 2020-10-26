@@ -1,9 +1,9 @@
 import React from 'react'
 import TextInput from './TextInput';
-import TopPageHandler from '../containers/TopPageContainer';
 import RadioInput from './RadioInput';
 import ShowState from './ShowState';
 import { SubmitButton } from './SubmitButton';
+import { TopPageHandler } from '../container/TopPageContainer';
 
 interface OwnProps {
     inputValue: string
@@ -12,7 +12,7 @@ interface OwnProps {
 
 }
 type Props = OwnProps & TopPageHandler
-const TopPageForm: React.FC = (props: Props) => {
+const TopPageForm: React.FC<Props> = (props: Props) => {
         return(
             <>
                 <TextInput title='入力' inputValue={props.inputValue} onChangeValue={props.handleOnChangeValue}/>

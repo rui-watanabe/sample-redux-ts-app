@@ -1,5 +1,5 @@
 import { reducerWithInitialState } from '../node_modules/typescript-fsa-reducers';
-import { TextInputActions } from './actions';
+import TextInputActions from './actions';
 
 export interface State {
     inputValue: string
